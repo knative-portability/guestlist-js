@@ -1,7 +1,8 @@
 const Firestore = require('@google-cloud/firestore');
 const db = new Firestore({
+    // replace with your projectId and path to json key
     projectId: 'gabrielmukobi-intern-2019',
-    keyFilename: './keys/gabrielmukobi-intern-2019-fd8d6db5c1fe.json',
+    keyFilename: './keys/gServiceAccountKey.json'
 })
 
 module.exports = {

@@ -17,7 +17,8 @@ RUN npm install --only=production
 COPY . .
 
 # Set environment variable for GAuth credentials
-ENV GOOGLE_APPLICATION_CREDENTIALS="./keys/gabrielmukobi-intern-2019-fd8d6db5c1fe.json"
+# Note: you must download an appropriate key from GCP console 
+ENV GOOGLE_APPLICATION_CREDENTIALS="./keys/gServiceAccountKey.json"
 
 # Run the web service on container startup.
 CMD [ "npm", "start" ]
