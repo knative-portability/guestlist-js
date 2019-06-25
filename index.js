@@ -33,14 +33,15 @@ app.get('/guests', (req, res) => {
 
 app.post('/add_name', (req, res) => {
     if (req.body.name) {
-        console.log("Added name ${name}");
+        console.log(`Added name ${name}`);
         addGuestToList(req.body.name)
-        res.status(201)
         res.redirect('/')
+        res.send()
     }
-    console.log("Failed to add name")
-    res.status(204)
-    res.send("Error: No name to add")
+    else {
+        console.log(`Failed to add name ${name}`)
+        res.status(204).send("Error: No name to add")
+    }
 })
 
 const port = process.env.PORT || 8080;
