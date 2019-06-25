@@ -31,12 +31,12 @@ app.get('/guests', (req, res) => {
 app.post('/add_name', (req, res) => {
     if (req.body.name) {
         addGuestToList(req.body.name)
-        console.log(`Adding name ${name}`);
+        console.log(`Adding name ${req.body.name}`);
         res.redirect('/')
         res.send()
     }
     else {
-        console.log(`Failed to add name ${name}`)
+        console.log("Failed to add name")
         res.status(204).send("Error: No name to add")
     }
 })
