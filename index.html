@@ -30,19 +30,32 @@
         <h1>Guestlist on Cloud Run!</h1>
         <div class="add-form">
             <h3>Add a name to the guestlist</h3>
-            <form action="/index.js" method="post">
-                <input type="text" name="Name">
+            <form action="/add_name" method="post">
+                <input type="text" name="name">
                 <input type="submit" value="Add">
             </form>
         </div>
         <div class="guest-list-display">
-            <h3>Who is on the guestlist:</h3>
-            <ul id="guest-list-ul"><li>No one yet</li></li></ul>
+            <h3>Who all is on the guestlist:</h3>
+            <ul id="guest-list-ul"></ul>
         </div>
     </div>
     <script>
     window.onload = function() {
-        // TODO query the guest list from the server and display the array of names in #guest-list-ul
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.onreadystatechange = function() { 
+            if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+                var names = JSON.parse(xmlHttp.responseText);
+                console.log(xmlHttp.responseText);
+                console.dir(names);
+                var namesHTML = ""
+                for (var i = 0; i < names.length; i++) {
+                    namesHTML += "<li>" + names[i] + "</li>";
+                }
+                document.getElementById("guest-list-ul").innerHTML = namesHTML;
+        }
+        xmlHttp.open("GET", "/guests", true); // true for asynchronous 
+        xmlHttp.send(null);
     }
     </script>
 </body>

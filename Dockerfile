@@ -17,7 +17,7 @@ RUN npm install --only=production
 COPY . .
 
 # Set environment variable for GAuth credentials
-# TODO write this
+ENV GOOGLE_APPLICATION_CREDENTIALS="./keys/gabrielmukobi-intern-2019-fd8d6db5c1fe.json"
 
 # Run the web service on container startup.
 CMD [ "npm", "start" ]

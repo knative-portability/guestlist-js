@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "gabrielmukobi-intern-2019",
+  "private_key_id": "fd8d6db5c1fe631451d6cdd1b2137171ab82cde5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDHZGQBLyBoSKNT\ny905rgcOp5WARz0AL4Raghl2uZXUXgxXYY4Z/FppNol2cjq0o8JLckgSPteGSzKB\neaXbGmJaiza+crO35EZ2kUdGm9VAOtomPVEjg64XuAAyk5qg2Nrh2dMXXzm8GJxO\nqrUysCcHRbkbZzrPZuGtaT+buxXnSijnsRClKcZQDNMkKH3+F9b7D20cQXDWSErk\nGb6+NA5LhRTbHtp3jbE7sVRMHupuzMj9+VzLXO351k+kDoJ8G+/uBtj5gJwJbHdI\nHuPN7+c7vMrRrRWwkXXwNTDxci1Y+Tr1uwodjNCpfL7s5BFYAoGBdE928+MKfqoB\nDGlp01S3AgMBAAECggEAAZMP3RiHq3sjWwaJlSqEIL//BLfLSgSWCXbsh4z4m2gw\ntcHt8tOUzS7ij/5f60w9vQXGfupjHkrat74DqsK/ExL1WDSkqaeSTN5hzzNs0CiG\nz3V9fgfMqKBJ1BxpRKrhs5XaPl2AobUaCt77Nk7AyCRrTUWX58partldaLfl+OEP\n9TMIsqsq6LDO+NqZoeapbiJBnZFCiBDwo731WqSeLJSA0aYJaGoQBPEVyvCJRSUx\noOljrxyp/0XUqOGkwUxaJFhCJyJ4bGrEM2o6bf+D5McKIfchj9HGC1cHm8ri1i3C\nkZfnUz237CrnlHglC8VIrtIlpEMbtwjkBPca8fLHoQKBgQDxYUw5QO6HOiM/RXH9\npaIKoxrDLiCkSg3qc/aJ07dLVnxW9JAxOWNxtwTGf0uFKvHe08j5U6/5GpkPwANd\na01RAU10sUf8LjG980jfFDrWgOR+hy4CQ4XMM1Inz72c5Ka+pRlHv9ZP8s2XiSBE\ndvBTwfSoCVNb1KFKpPnzasQAoQKBgQDTeA1VMFsdhF3+45/Ap3be/tHplaQW1jKb\ndoUbY7MFJaxJFGMZzuAT+9d5wMpjMk/FwM/gn1NdSDKlsPDb4YL2olK+3NA3iIXb\nn1JC8aJSIYZ4z2+6KNw9l7+w6wuQq26PbtJHXXGpFj59hwYUpojtI8G2j6MDTkym\naxku+3xeVwKBgGUL0Sfqma/8U4MKJEUFkIcZbnuklL+RzK+IKf3aplGge96+9JnW\np12UOyiJY2j06FnamLhfIzyJuOeR/xadc7lkbTNbf4H/KI2XCbtxMYxYWs7o8ga6\nk4k/NrY5zeufAHqwjJuvoBzJzO0R13Mxwzuc5zls5ft8UKT52TTgTfrhAoGANxfF\n0XXhpxT/MBK5YgW/EGWu5n4X2+M+GAaOsw4Ma8De28M19llRQ6OPBadWkvVelxSe\nk9SucVUH7ObmOULNTdgIWrVIgc9NoGQnmE0/jsoxMHRKlWNjzaAlTsBNqQkgqrmi\nivkrTXQAH8/3o5WngrCYHSnavFe/3HN2gij+w80CgYAgTv6rTkEdwoViEeARAkgw\nprAneKv84wAtWXoowWVF45pIyWLeItcI+Vy3FmiR+9oxJ4STSzHIdYAlorwf6SlR\nB2Th/mN53xtZfccg4kgKEWUFMIHuOy/TmFhvfbJxKF81HQvjaf6+cQStuzLPB6pl\nz/EM1/rOUJqX1XymB98Whw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "guestlist-service@gabrielmukobi-intern-2019.iam.gserviceaccount.com",
+  "client_id": "117851118854886352984",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/guestlist-service%40gabrielmukobi-intern-2019.iam.gserviceaccount.com"
+}
