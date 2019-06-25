@@ -41,22 +41,20 @@
         </div>
     </div>
     <script>
-    window.onload = function() {
-        var xmlHttp = new XMLHttpRequest();
-        xmlHttp.onreadystatechange = function() { 
-            if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
-                var names = JSON.parse(xmlHttp.responseText);
-                console.log(xmlHttp.responseText);
-                console.dir(names);
+        window.onload = function () {
+            var xmlHttp = new XMLHttpRequest();
+            xmlHttp.onreadystatechange = function () {
+                if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+                    var names = JSON.parse(xmlHttp.responseText);
                 var namesHTML = ""
                 for (var i = 0; i < names.length; i++) {
                     namesHTML += "<li>" + names[i] + "</li>";
                 }
                 document.getElementById("guest-list-ul").innerHTML = namesHTML;
+            }
+            xmlHttp.open("GET", "/guests", true); // true for asynchronous 
+            xmlHttp.send(null);
         }
-        xmlHttp.open("GET", "/guests", true); // true for asynchronous 
-        xmlHttp.send(null);
-    }
     </script>
 </body>
 

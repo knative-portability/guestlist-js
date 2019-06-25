@@ -10,7 +10,7 @@ module.exports = {
                 name: guestName
             })
             .then(function (docRef) {
-                console.log("Document written with ID: ", docRef.id);
+                console.log("Firestore document written with ID: ", docRef.id);
             })
             .catch(function (error) {
                 console.error("Error adding document: ", error);

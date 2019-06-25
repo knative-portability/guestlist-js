@@ -19,22 +19,19 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json())
 
 app.get('/', (req, res) => {
-    // console.log('Received a GET request for guests')
     res.sendFile(path.join(__dirname + '/index.html'));
 })
 
 app.get('/guests', (req, res) => {
-    // console.log('Received a GET request for guests.')
     getAllGuests((guests) => {
-        res.status(200)
-        res.send(JSON.stringify(guests))
+        res.status(200).send(JSON.stringify(guests))
     })
 })
 
 app.post('/add_name', (req, res) => {
     if (req.body.name) {
-        console.log(`Added name ${name}`);
         addGuestToList(req.body.name)
+        console.log(`Adding name ${name}`);
         res.redirect('/')
         res.send()
     }
