@@ -34,8 +34,7 @@ app.post('/add_name', (req, res) => {
         console.log(`Adding name ${req.body.name}`);
         res.redirect('/')
         res.send()
-    }
-    else {
+    } else {
         console.log("Failed to add name")
         res.status(204).send("Error: No name to add")
     }
