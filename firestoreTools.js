@@ -27,7 +27,7 @@ module.exports = {
                     //console.log(doc.data())
                     guestList.push(doc.data().name);
                 });
-                guestList = guestList === [] ? "No guests found" : guestList
+                guestList = guestList.length === 0 ? ["No guests found"] : guestList
                 // console.log("Guestlist:")
                 // console.log(guestList)
                 callback(guestList)
